@@ -1,5 +1,5 @@
 ---
-title: Le Wagon 2-hour landing workshop
+title: Le Wagon 2-hour profile workshop
 ---
 
 <%= partial "components/banner" %>
@@ -10,7 +10,7 @@ title: Le Wagon 2-hour landing workshop
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
 
       <section class="readme-section">
-        <h2 class="readme-header">1.coucou Let's set up</h2>
+        <h2 class="readme-header">1.Let's set up</h2>
         <ol>
           <li>Start Sublime Text. It will open a new black window.</li>
           <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Sublime Text window.</li>
@@ -36,10 +36,9 @@ title: Le Wagon 2-hour landing workshop
           <li>
             To save time, just right-click on the following images and save them in your <code>images</code> folder
             <ul class="list-inline">
-              <li><img src="images/briefcase.png" alt="" width="100"></li>
-              <li><img src="images/diamond.png" alt="" width="100"></li>
-              <li><img src="images/heart.png" alt="" width="100"></li>
-              <li><img src="images/laptop.png" alt="" width="100"></li>
+              <li><img src="images/proud_coder.svg" alt="" width="100"></li>
+              <li><img src="images/conference_call.svg" alt="" width="100"></li>
+              <li><img src="images/teacher.svg" alt="" width="100"></li>
             </ul>
           </li>
           <li>Then start with this HTML code in <code>index.html</code></li>
@@ -48,39 +47,32 @@ title: Le Wagon 2-hour landing workshop
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My playground landing</title>
+    <title>My super profile page</title>
   </head>
   <body>
-    <h1>My playground app</h1>
-    <p>This is the important line everyone reads..</p>
+    <h1>Bonjour, je m'appelle ...... 👋🏼</h1>
+    <p>décris toi en quelques mots</p>
     <p>
-      <a href="#">Start now</a>
+      <a href="#">Mon portfolio 📓</a>
     </p>
 
-    <img src="images/briefcase.png" alt="picture description" width="100">
-    <h2>Fast</h2>
-    <p>A fast app, <strong>very fast</strong> app</p>
+    <img src="images/proud_coder.svg" alt="picture description" width="100">
+    <h3>Coder</h3>
 
-    <img src="images/diamond.png" alt="picture description" width="100">
-    <h2>Simple</h2>
-    <p>A simple app, <strong>very simple</strong> app</p>
+    <img src="images/conference_call.svg" alt="picture description" width="100">
+    <h3>Vidéo conférencer</h3>
 
-    <img src="images/heart.png" alt="picture description" width="100">
-    <h2>Awesome</h2>
-    <p>An awesome app, <strong>very awesome</strong> app</p>
+    <img src="images/teacher.svg" alt="picture description" width="100">
+    <h3>Enseigner</h3>
 
-    <img src="images/laptop.png" alt="picture description" width="100">
-    <h2>Beautiful</h2>
-    <p>A beautiful app, <strong>very beautiful</strong> app</p>
-
-    <p>This is a playground landing ©Le Wagon</p>
+    <p>Ceci est un site réalisé avec ❤️ et Le Wagon Nantes</p>
   </body>
 </html>
 <% end %>
         <h3>Extra - find nice personal icons</h3>
         <ul>
           <li>You can pick your icons on <a href="https://iconstore.co/" target="_blank">IconStore</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> or <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (they have a free pack).</li>
-          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a></li>
+          <li><strong>Tips</strong>: Also stay tuned checking <a href="https://www.producthunt.com/search?q=icons" target="_blank">icon resources on Product Hunt</a> or Emoji on <a href="https://emojipedia.org/" target="_blank">Emijipedia</a></li>
         </ul>
       </section>
 
@@ -103,26 +95,31 @@ title: Le Wagon 2-hour landing workshop
 <% code("css") do %>
 /* style.css */
 body{
-  background: rgb(245,245,245);
+  background: rgb(248,248,248);
   color: green;
+  margin: 0px;
   font-size: 25px;
   font-family: Helvetica;
 }
+
 h1{
   font-family: Courier;
   color: red;
   font-weight: lighter;
   font-size: 10px;
 }
+
 h2 {
   font-family: Courier;
   color: pink;
   font-weight: lighter;
   font-size: 8px;
 }
+
 a {
   color: yellow;
 }
+
 a:hover {
   text-decoration: none;
   color: purple;
@@ -135,36 +132,30 @@ a:hover {
 
 <% code("html") do %>
 <div>
-  <h1>My playground app</h1>
-  <p>This is the important line everyone reads..</p>
+  <h1>Bonjour, je m'appelle ...... 👋🏼</h1>
+  <p>décris toi en quelques mots</p>
+  <p>
+    <a href="#">Mon portfolio 📓</a>
+  </p>
 </div>
 
 <div>
-  <img src="images/briefcase.png" alt="picture description" width="100">
-  <h2>Fast</h2>
-  <p>A fast app, <strong>very fast</strong> app</p>
+  <img src="images/proud_coder.svg" alt="picture description" width="100">
+  <h3>Coder</h3>
 </div>
 
 <div>
-  <img src="images/diamond.png" alt="picture description" width="100">
-  <h2>Simple</h2>
-  <p>A simple app, <strong>very simple</strong> app</p>
+  <img src="images/conference_call.svg" alt="picture description" width="100">
+  <h3>Vidéo conférencer</h3>
 </div>
 
 <div>
-  <img src="images/heart.png" alt="picture description" width="100">
-  <h2>Awesome</h2>
-  <p>An awesome app, <strong>very awesome</strong> app</p>
+  <img src="images/teacher.svg" alt="picture description" width="100">
+  <h3>Enseigner</h3>
 </div>
 
 <div>
-  <img src="images/laptop.png" alt="picture description" width="100">
-  <h2>Beautiful</h2>
-  <p>A beautiful app, <strong>very beautiful</strong> app</p>
-</div>
-
-<div>
-  <p>This is a playground landing ©Le Wagon</p>
+  <p>Ceci est un site réalisé avec ❤️ et Le Wagon Nantes</p>
 </div>
 <% end %>
 
@@ -173,110 +164,119 @@ a:hover {
         <h2 class="readme-header">5. Name your tags</h2>
         <ul>
           <li>Name your banner and footer with <code>id</code> like <code>&lt;div id="banner"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code>and <code>&lt;a class="btn"&gt;</code></li>
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
-#banner{
+#banner {
   text-align: center;
   background-image: url("https://unsplash.it/1300/600?random");
   background-size: cover;
   padding: 150px;
   color: white;
-  text-shadow: 1px 1px 5px black;
 }
+
+#banner img {
+  border: 5px solid white;
+}
+
 #banner h1 {
   color: white;
   font-size: 50px;
+  text-shadow: 3px 3px #F18805;
 }
+
 #banner p {
   color: white;
   opacity: 0.8;
   font-size: 30px;
   font-weight: lighter;
 }
-#footer{
-  padding: 30px;
-  background: rgb(30, 30, 30);
-  color: lightgrey;
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: #F18805;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 15px 20px;
 }
-.card{
+
+.btn:hover {
+  background-color: #613F75;
+  opacity: 0.8;
+  color: white;
+  border: 2px solid white;
+}
+
+.card {
   padding: 50px;
   font-weight: lighter;
+}
+
+#footer {
+  margin-top: 15px;
+  padding: 10px 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
 }
 <% end %>
 
 <h3>Extra - find a cool background image</h3>
 <ul>
-  <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+  <li>You can pick your background picture on <a href="https://www.pexels.com/" target="_blank">Pexels</a> or <a href="https://picsum.photos/images" target="_blank">Picsum</a></li>
 </ul>
       </section>
-      <section class="readme-section">
-        <h2 class="readme-header">6. Fontawesome</h2>
-        <p>In your <code>head</code>, it's in your <code>head</code>!</p>
-<% code("html") do %>
-<head>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-</head>
-<% end %>
-        <p>And then in the footer</p>
-<% code("html") do %>
-<ul>
-  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-  <li><a href="#"><i class="fab fa-github"></i></a></li>
-</ul>
-<% end %>
-        <p>With a bit of CSS style</p>
-<% code("css") do %>
-#footer a {
-  color: lightgrey;
-  font-size: 15px;
-}
-#footer a:hover {
-  color: white;
-}
-<% end %>
-      </section>
-      <section class="readme-section">
-        <h2 class="readme-header">7. Bootstrap setup</h2>
 
-        <p>Link Bootstrap stylesheet in the <code>head</code> section of your HTML <strong>before your stylesheet link</strong></p>
-<% code("html") do %>
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href='style.css' rel='stylesheet'>
-</head>
-<% end %>
-          <p>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</p>
-
-      </section>
       <section class="readme-section">
-        <h2 class="readme-header">8. Bootstrap grid</h2>
-        <ul>
-          <li>Inject your 4 cards div in the following responsive grid</li>
-        </ul>
+        <h2 class="readme-header">6. CSS grid</h2>
+        <p>A bit of <code>html</code>and of <code>css</code>!</p>
+        <p>Let's add a <code>&lt;div class="cards"&gt;</code> around our boxes <code>.card-white</code></p>
+
 <% code("html") do %>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <!-- div class="card" -->
-    </div>
+<div class="cards">
+  <div class="card">
+  </div>
+  <div class="card">
+  </div>
+  <div class="card">
   </div>
 </div>
 <% end %>
+          <p>With a bit of CSS style</p>
+<% code("css") do %>
+.cards {
+  margin: 15px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 1000px;
+}
+<% end %>
+
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. RESPONSIVE</h2>
+          <p>Let's add media queries in our <code>css</code> to <strong>add responsiveness</strong></p>
+<% code("css") do %>
+@media(max-width: 992px){
+  .cards{
+  width: 750px;
+  }
+}
+@media(max-width: 768px){
+  .cards{
+  width: 90%;
+  grid-template-columns: 1fr;
+  }
+}
+<% end %>
+      </section>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">8.GITHUB PAGES</h2>
+          <p>Just follow the process <a href="https://pages.github.com/">Github Pages</a> or with <a href="https://pedrolane.github.io/cv/to_go/2h_profile.pdf">our slides</a></p>
+        <p>Your first web page is now online 🚀 <strong>Congrats !</strong> </p>
       </section>
     </div>
   </div>
